@@ -13,7 +13,7 @@ from omegaconf import open_dict
 def init_model():
     lookahead_size = 80  # in milliseconds
     decoder_type = "rnnt"
-    device = torch.device('cuda:0')
+    device = torch.device('cpu')
     ENCODER_STEP_LENGTH = 80  # ms
 
     model_name = "stt_en_fastconformer_hybrid_large_streaming_multi"
